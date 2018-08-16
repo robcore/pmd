@@ -41,7 +41,7 @@ if [ "$hostname" == null ]; then hostname="$srvip"; fi
 echo "You're playing on server $hostname ($org), located on $city,$country"
 echo "$srvip $city $country" >>$detectlist
 
-ping -c3 -q $srvip |grep round-trip
+ping -c 3 -q $srvip | grep round-trip
 
 echo -e "\n"
 
